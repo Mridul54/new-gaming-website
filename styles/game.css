@@ -8,12 +8,12 @@ header{
     height: 100px;
     background: #FFF;
     /* box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05); */
-    
 }
 nav{
     width: 1440px;
+    height: 100px;
     margin: 0px auto;
-    padding: 25px 0px;
+    padding: 0px 0px;
     display: flex;
     justify-content: space-between;
 }
@@ -21,6 +21,7 @@ nav{
     display: flex;
     gap: 10px;
     align-items: center;
+    justify-content: center;
 }
 .gamer-style{
     font-family: Work Sans;
@@ -37,7 +38,8 @@ background-clip: text;
 .nav-menu{
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
+    margin-bottom: 50px;
 }
 .icon{
     display: flex;
@@ -57,7 +59,7 @@ nav a{
    
     background-image: url(../images/Group\ 14.png);
     background-repeat: no-repeat;
-    background-size:;
+    
     
 }
 .banner-container{
@@ -100,7 +102,7 @@ nav a{
 .banner-description{
     color: #534C64;
     font-size: 20px;
-    font-style: normal;online-games-img
+    font-style: normal;
     font-weight: 500;
 }
 .btn{
@@ -156,6 +158,49 @@ padding-top: 15px;
     
     
 }
+.play-instant{
+    width: 1440px;
+    margin: 0px auto;
+    padding: 25px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.play-instant-info{
+    margin-left: 150px;
+}
+.online-game-text{
+    color: #0B0223;
+font-family: Work Sans;
+font-size: 48px;
+font-style: normal;
+}
+.gradiant{
+    color: #F948B2;
+}
+.online-description{
+    color: #534C64;
+    line-height: 30px;
+font-family: Work Sans;
+font-size: 18px;
+font-style: normal;
+}
+.play-instant-image{
+    position: relative;
+}
+.play-instant-image{
+
+}
+.second-img{
+    position: absolute;
+    bottom: -100px;
+    left: -150px;
+    /* transform: translateX(-100px);
+    transform: translateY(80px); */
+    /* transform: translate(90px -60px); */
+
+}
 
 
 
@@ -168,14 +213,12 @@ padding-top: 15px;
 
 
 
-
-
-/* Responsive */
+/* mobile responsive  */
 @media screen and (max-width: 576px) {
     
     nav{
         flex-direction: column;
-        width: 196px;
+        width: 90%;
         
     }
    
@@ -189,12 +232,105 @@ padding-top: 15px;
     .banner-details{
         /* flex-direction: column; */
     }   
-    .banner-container{
+
+    /* .banner-container{
+        width: 1440px;
+        margin: 0px auto;
+        padding: 25px 0px;
+        display: flex;
+        justify-content: space-between;
+        
+        align-items: center; 
+    }
+    .banner-details{
+        width: 50%;
+        
+    }
+     */
+    .banner-container {
         flex-direction: column;
-        width: 200px;
+        width: 90%;
+        margin: 0 auto;
+        /* padding: 0px 0px; */
     }
     .banner-img{
         flex-direction: column;
     }
+    .banner{
+        margin-top: 80px;
+    }
+    .banner-head1{
+        font-size: 45px;
+    }
+    .banner-details{
+        width: 90%;
+    }
+    .banner-head3{
+        font-size: 16px;
+    }
+    .banner-img{
+        width: 90%;
+    }
+    .banner-img-body{
+        width: 100%;
+    }
+    .funny-vdo{
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .online-games-head{
+        font-size: 30px;
+    }
+    .span{
+        font-size: 30px;
+    }
+    .online-games-description{
+        font-size: 13px;
+    }
+    /* .onine-game{
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+    } */
+    .onine-game{
+        /* margin-right: 20px; */
+        padding-left: 0px 20px;
+        text-align: center;
+    }
+    .online-games-img{
+        width: 90%;
+        flex-direction: column;
+        margin-left: 20px;
+    }
+    .play-instant{
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .play-instant-info{
+        text-align: center;
+        padding-right:150px;
+    }
+    .online-game-text{
+        font-size: 25px;
+    }
+    .online-description{
+        font-size: 13px;
+        line-height: 15px;
+        padding: 30px 0px;
+    }
+    .play-instant-image{
+        width: 80%;
+        text-align:end;
+    }
     
+    .second-img {
+        width: 40%;
+        position: absolute;
+        bottom: -50px;
+        left: 0px;
+        
+        
+    }
     }
